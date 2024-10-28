@@ -1,0 +1,379 @@
+:root {
+    --color-site: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: black;
+}
+
+body {
+    /* background-color: #c4c4c4; */
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    font-weight: 500;
+    font-style: normal;
+}
+
+ul li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+li:hover {
+    transition: 0.5s ease all;
+    transform: scale(1.2);
+}
+
+.content-header {
+    display: flex;
+    width: 100vw;
+    background-color: #F5867F;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    
+    i{
+        color: white;
+    }
+}
+
+
+.effect-hover{
+    color: white;
+}
+
+.effect-hover:hover{
+    cursor: pointer;
+    color: #833a34;
+}
+
+.logo {
+    font-size: xx-large;
+    font-weight: 300;
+    letter-spacing: 0.8rem;
+    color: var(--color-site);
+    user-select: none;
+    cursor: pointer;
+}
+
+
+#content-products,
+#content-slide {
+    width: 100%;
+    height: 100%;        
+}
+
+#content-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#content-slide{
+    position: relative;
+    background-color: #272727;
+    /* height: 280px; */
+    height: 20rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    text-transform: uppercase;    
+}
+
+#content-slide .slide{
+    color: white;    
+}
+
+/* .slide {
+    width: 100vw;
+    height: 40vh;
+    overflow: hidden;
+}
+
+.slide img {
+    height: 100vh;
+    width: auto;
+    transform: translateY(-2.5rem);
+} */
+
+.text-center-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xxx-large;
+}
+
+
+/* Footer */
+.copyright {
+    display: flex;
+    justify-content: end;
+    padding: 1rem 3rem;
+    background-color: #292929;
+    font-size: small;
+    letter-spacing: 1px;
+    gap: 8px;
+    
+    span {
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #d1d1d1;
+    }
+    
+    a{
+        color: #F5867F;
+    }
+}
+
+
+.copyright a:hover {
+    color: #f15f55;
+}
+
+
+/* Card Product*/
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 2rem 0rem;        
+}
+
+.card {
+    font-family: "Poppins", sans-serif;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 200px; */    
+    width: 260px;
+
+    border: 1px solid #ddd;
+    padding: 15px 10px;
+    border-radius: 0.3rem;
+    gap: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);    
+    transition: transform 0.2s ease;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.card-img img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+.card button {
+    width: 100%;
+    border: 1px solid #d4d4d4;
+    background-color: #F5867F;
+    color: white;
+    border-radius: 0.2rem;
+    padding: 0.4rem 0rem;
+    font-size: small;
+}
+
+button:hover {
+    color: black;
+    cursor: pointer;
+}
+
+
+/* Content Info */
+.content-info{
+    width: 100vw;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 1rem; 
+    gap: 4rem;  
+    background-color: #e9e9e9; 
+}
+
+
+.box{
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.box .icon{
+    font-size: xx-large;
+    
+    i{
+        color: #636363;        
+    }
+}
+
+.box .description{
+    font-size: small;
+
+    h3{
+        color: rgb(94, 92, 92);
+    }
+
+    p{
+        font-size: small;
+    }
+}
+
+
+/* Fonts Poppins */
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+@media (width >= 1660px) {
+    .products {
+        margin: 2rem 12rem;        
+    }
+}
+
+@media (1024px <= width <= 1659px) {
+    
+ }
+
+
+@media (768px <= width <= 1023px) { }
+
+@media (width < 768px) { }
