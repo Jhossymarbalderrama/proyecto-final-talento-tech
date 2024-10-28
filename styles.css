@@ -256,6 +256,62 @@ button:hover {
 }
 
 
+/* Navigation Pages */
+.content-navigation {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1.5rem;
+    background-color: #f1f1f1;
+}
+
+.content-navigation .nav-title {
+    font-size: large;
+    text-transform: uppercase;
+    font-weight: 600;       
+}
+
+
+.nav-text {
+    color: #5f5f5f;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.content-navigation .nav-routes {
+    display: flex;   
+    gap: 1.2rem;      
+}
+
+.nav-routes a{
+    text-decoration: none;   
+}
+
+.nav-routes a:hover{
+    color: #F5867F;
+}
+
+.nav-routes i{
+    font-size: large;
+    color: #5f5f5f;
+}
+
+
+/* CONTENT PAGES AUX */
+.content-aux{    
+    height: 400px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #272727;
+    color: white;
+    font-size: xx-large;
+    text-transform: uppercase;
+    letter-spacing: 4px;  
+    margin-bottom: 5px;  
+}
+
 /* Fonts Poppins */
 
 .poppins-thin {
@@ -367,6 +423,7 @@ button:hover {
 }
 
 
+
 @media (width >= 1660px) {
     .products {
         margin: 2rem 12rem;        
@@ -374,7 +431,9 @@ button:hover {
 }
 
 @media (1024px <= width <= 1659px) {
-    
+    .content-navigation {
+        padding: 2rem 3rem;
+    }
  }
 
 
