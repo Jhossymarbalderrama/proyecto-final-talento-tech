@@ -50,6 +50,10 @@ li:hover {
     align-items: center;
 }
 
+.content-header a{
+    text-decoration: none;
+}
+
 .menu {
     display: flex;
     align-items: center;
