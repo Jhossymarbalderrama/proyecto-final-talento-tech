@@ -11,6 +11,9 @@
     background-color: #f74813;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 * {
     margin: 0;
@@ -150,8 +153,6 @@ li:hover {
     font-size: xxx-large;
 }
 
-
-/* Footer */
 .copyright {
     display: flex;
     justify-content: end;
@@ -178,7 +179,6 @@ li:hover {
 }
 
 
-/* Card Product*/
 .products {
     display: flex;
     flex-wrap: wrap;
@@ -261,7 +261,6 @@ li:hover {
     font-size: large;    
 }
 
-/* Content Info */
 .content-info {
     width: 100vw;
     height: 140px;
@@ -302,8 +301,6 @@ li:hover {
     }
 }
 
-
-/* Navigation Pages */
 .content-navigation {
     width: 100vw;
     display: flex;
