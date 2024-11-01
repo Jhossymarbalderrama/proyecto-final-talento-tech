@@ -3,15 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto | Tienda Virtual</title>
+    <title>Contacto | MetroWear</title>
     <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="./contact.css">
   </head>
   <body>
-    <head id="head">
+    <header id="head">
       <div class="content-header">
         <a href="../../index.html">
-          <div class="logo">ONDA</div>
+          <div class="logo">Metro<span>Wear</span> </div>
         </a>
         <div class="menu">
           <nav>
@@ -33,7 +40,7 @@
           </a>
         </div>
       </div>
-    </head>
+    </header>
 
     <!-- Navegacion  -->
     <section class="content-navigation">
@@ -46,7 +53,35 @@
       </div>
     </section>
 
-    <main class="content-aux">Contacto</main>
+    <main>
+      <form action="https://formspree.io/f/xldejlyz" method="post">
+        <h2>Formulario de contacto</h2>
+
+        <div class="content-clear-btn">
+          <button type="reset" class="btn-styles">
+            <i class="fa-solid fa-recycle"></i>            
+            Limpiar Form
+          </button>
+        </div>
+
+        <div class="content-input">
+          <label for="name">Nombre <span>*</span></label>
+          <input type="text" class="form-elements" name="name" id="name" placeholder="nombre">
+        </div>
+
+        <div class="content-input">
+          <label for="email">Correo electrónico <span>*</span></label>
+          <input type="email" class="form-elements" name="email" id="email" placeholder="ejemplo@gmail.com">
+        </div>
+
+        <div class="content-input">
+          <label for="message">Mensaje <span>*</span></label>
+          <textarea class="form-elements" name="message" id="message" placeholder="mensaje"></textarea>
+        </div>
+
+        <button type="submit" class="bnt-send btn-styles">Enviar</button>       
+      </form>
+    </main>
 
     <footer>
       <div class="copyright">

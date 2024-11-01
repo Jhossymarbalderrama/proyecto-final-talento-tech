@@ -1,0 +1,102 @@
+
+main{
+    width: 100%;    
+    display: flex;
+    justify-content: center;    
+    padding: 1rem 0rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+    /* background-color: aquamarine; */
+    width: 60vw;
+    padding: 15px 20px;
+
+
+    border-radius: 8px;
+}
+
+form .content-input{
+    display: flex;
+    flex-direction: column;
+}
+
+form .bnt-send{
+    color: white;    
+    height: 30px;
+    letter-spacing: 1px;
+    background-color: #003D7A;
+}
+
+.btn-styles{
+    font-weight: bold;    
+    border: none;
+    border-radius: 3px;
+    background-color: transparent;
+}
+
+
+.content-clear-btn{
+    widows: 100%;
+    display: flex;    
+    justify-content: end;
+}
+
+.content-clear-btn button{
+    background-color: #003D7A;
+    color: white;
+    padding: 8px;
+    display: flex;
+    gap: 5px;
+}
+
+.content-clear-btn button:hover{
+    background-color: #0a63bd;
+}
+
+.content-clear-btn button i{
+    color: white;
+}
+
+
+form .bnt-send:hover{
+    background-color: #0a63bd;
+    color: white;
+}
+
+h2{
+    color: #424141;
+}
+
+.content-input label{
+    padding: 0px 2px;
+    font-size: medium;
+    font-weight: 700;
+    color: #5a5a5a;    
+}
+
+label span{
+    color: red;
+    font-weight: bolder;
+}
+
+
+.content-input input{
+    height: 35px;
+}
+
+.content-input textarea{    
+    height: 120px;
+}
+
+.form-elements{
+    padding: 8px;
+    margin: 5px 0px;
+    border: none;
+    border: 1px solid rgb(148, 148, 148);
+    border-radius: 3px;
+}
+
