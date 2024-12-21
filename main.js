@@ -45,7 +45,7 @@ function buildProduct(product){
                     <img src="${product.img}" alt="" />
                     <div class="card-info">
 
-                    <p class="card-category">Categoria ${product.category}</p>
+                    // <p class="card-category">Categoria ${product.category}</p>
                     <p class="card-description">${product.title}</p>
                     <p class="card-price">$${product.price.toFixed(3)}</p>
 
