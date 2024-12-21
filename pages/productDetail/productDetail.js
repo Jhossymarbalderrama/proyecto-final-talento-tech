@@ -7,13 +7,14 @@ productView = {};
  * ? Armo la seccion del producto a ver segun el id guardado en el localstorage
  */
 async function main(){
-    checkCartList();
+    
     let product;
     idProductView = localStorage.getItem("idProductView");
 
     product = await getProductById(idProductView);  
 
     drawSectionProduct(product);
+    checkCartList();
 }
 
 /**
@@ -123,9 +124,11 @@ function addProductToCart(){
  */
 function checkCartList(){
     const listProductCart = localStorage.getItem("productCart");
-    let countProduct = (JSON.parse(listProductCart)).length;
+     if(listProductCart){
+        let countProduct = (JSON.parse(listProductCart)).length;
         
-    drawCountCartView(countProduct);
+        drawCountCartView(countProduct);
+     }
 }
 
 /**

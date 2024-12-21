@@ -37,7 +37,6 @@ async function buildProductSection(){
     }
 }
 
-
 function buildProduct(product){
     return `
             <div class="card">
