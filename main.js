@@ -1,6 +1,6 @@
 
 var products = [];
-const urlDataProduct = '/data/products.json';
+const urlDataProduct = './data/products.json';
 
 
 async function getProducts(){
@@ -69,9 +69,11 @@ function viewProductDetail(idProduct){
 
 function checkCartList(){
     const listProductCart = localStorage.getItem("productCart");
-    let countProduct = (JSON.parse(listProductCart)).length;    
+    if(listProductCart){
+        let countProduct = (JSON.parse(listProductCart)).length;    
     
-    drawCountCartView(countProduct);
+        drawCountCartView(countProduct);     
+    }
 }
 
 
