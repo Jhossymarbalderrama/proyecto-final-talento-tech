@@ -42,7 +42,7 @@ function buildProduct(product){
     return `
             <div class="card">
                 <div class="card-img">
-                    <img src="/${product.img}" alt="" />
+                    <img src="${product.img}" alt="" />
                     <div class="card-info">
 
                     <p class="card-category">Categoria ${product.category}</p>
