@@ -63,7 +63,7 @@ function buildProduct(product){
  */
 function viewProductDetail(idProduct){
     localStorage.setItem("idProductView", idProduct);  
-    window.location.replace(window.location.href.split('/').slice(0, 2).join('/') + './pages/productDetail/productDetail.html');
+    window.location.replace(window.location.href.split('/').slice(0, 3).join('/') + 'proyecto-final-talento-tech/pages/productDetail/productDetail.html');
 }
 
 
