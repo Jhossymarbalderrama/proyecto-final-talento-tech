@@ -3,34 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi carrito | MetroWear</title>
-    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
-    
+    <title>Home | MetroWear</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
+
+    <link rel="stylesheet" href="./productDetail.css"/>
     <link rel="stylesheet" href="../../styles.css" />
-    <link rel="stylesheet" href="./cart.css">
   </head>
   <body>
+
     <header id="head">
       <div class="content-header">
         <a href="../../index.html">
-          <div class="logo">Metro<span>Wear</span> </div>
+          <div class="logo">
+            <div class="logo">Metro<span>Wear</span> </div>
+          </div>
         </a>
         <div class="menu">
           <nav>
             <ul>
               <li>
-                <a class="effect-hover" href="../store/store.html">Productos</a>
+                <a class="effect-hoAgregar al Carrito" href="/pages/store/store.html">Productos</a>
               </li>
               <li>
-                <a class="effect-hover" href="../review/review.html">Reseñas</a>
+                <a class="effect-hoAgregar al Carrito" href="/pages/review/review.html">Reseñas</a>
               </li>
               <li>
-                <a class="effect-hover" href="../contact/contact.html">Contacto</a>
+                <a class="effect-hoAgregar al Carrito" href="/pages/contact/contact.html">Contacto</a>
               </li>
             </ul>
           </nav>
@@ -44,44 +48,53 @@
     </header>
 
     <section class="content-navigation">
-      <div class="nav-title nav-text">Mi Carrito de Compra</div>
+      <div class="nav-title nav-text">Detalle del Producto</div>
 
       <div class="nav-routes nav-text">
         <a href="../../index.html">Home</a>
         /
-        <a>Carrito</a>
+        <a>Detalle Producto</a>
       </div>
     </section>
 
-    <main class="content-aux">
-      <div class="cart-container">
-        <div class="product-cards" id="product-cards">
+    <section class="content-info">        
+        <div class="box">
+            <span class="icon">
+                <i class="fa-solid fa-car"></i>
+            </span>
             
-        </div>
-
-
-        <div class="pay-cart" id="pay-cart">
-            <hr>
-            <div class="content-subtotal">
-              <p>Subtotal</p>
-              <span id="subtotal-cart">$</span>
+            <div class="description">
+                <h3>Envio a todo el pais</h3>
+                <p>Correo Argentino Transportes y Expresos</p>
             </div>
-            <hr>
-            <div class="content-total">
-              <p>Total</p>
-              <span id="total-cart">$</span>
-            </div>                       
         </div>
 
-        <div class="content-btn-pay">
-          <button class="btn-pay" title="pagar productos" onclick="payProducts()">
-            <i class="fa-solid fa-cash-register"></i>
-            Pagar
-            </button>
+        <div class="box">
+            <span class="icon">
+                <i class="fa-solid fa-house-chimney"></i>
+            </span>
+            
+            <div class="description">
+                <h3>Retiro en Sucursal</h3>
+                <p>Podes retirar tu pedido en nuestra sucursal</p>
+            </div>
         </div>
-          
-    </div>
-    </main>
+
+        <div class="box">
+            <span class="icon">
+                <i class="fa-solid fa-money-bills"></i>
+            </span>
+            
+            <div class="description">
+                <h3>Compra Minima</h3>
+                <p>Compra minima $60000</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="content-product-detail">
+
+    </section>
 
     <footer>
       <div class="copyright">
@@ -91,11 +104,13 @@
         >
       </div>
     </footer>
-
+    
+   
     <a href="#head" class="arrow-up">
       <i class="fa-solid fa-chevron-up"></i>
     </a>
-    
+   
+
     <script
       src="https://kit.fontawesome.com/181725805d.js"
       crossorigin="anonymous"
@@ -103,6 +118,8 @@
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
-    <script src="./cart.js"></script>    
+    
+    <script  src="./productDetail.js"></script>
+    
   </body>
 </html>
