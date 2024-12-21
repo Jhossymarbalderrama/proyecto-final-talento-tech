@@ -1,6 +1,6 @@
 
 var products = [];
-const urlDataProduct = './data/products.json';
+const urlDataProduct = '/data/products.json';
 
 
 async function getProducts(){
@@ -41,7 +41,7 @@ function buildProduct(product){
     return `
             <div class="card">
                 <div class="card-img">
-                    <img src="${product.img}" alt="" />
+                    <img src="/assets/images/products/${product.img}" alt="" />
                     <div class="card-info">
 
                     <p class="card-category">Categoria ${product.category}</p>
@@ -62,7 +62,8 @@ function buildProduct(product){
  */
 function viewProductDetail(idProduct){
     localStorage.setItem("idProductView", idProduct);  
-    window.location.replace(window.location.href.split('/').slice(0, 3).join('/') + '/proyecto-final-talento-tech/pages/productDetail/productDetail.html');
+    // window.location.replace(window.location.href.split('/').slice(0, 3).join('/') + '/proyecto-final-talento-tech/pages/productDetail/productDetail.html');
+    window.location.replace(window.location.href.split('/').slice(0, 3).join('/') + '/pages/productDetail/productDetail.html');
 }
 
 

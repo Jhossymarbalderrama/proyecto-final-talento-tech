@@ -45,7 +45,7 @@ function drawSectionProduct(product){
         <div class="product-section">
 
             <div class="product-image">
-            <img src="../${product.img}" alt="Product Image">
+            <img src="../../assets/images/products/${product.img}" alt="Product Image">
             </div>
 
             <div class="product-details">

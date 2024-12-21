@@ -54,7 +54,7 @@ function drawCartProduct(pd) {
     return `
             <div class="product-card">
                 <span class="product-cant">Cantidad: ${pd.cant}</span>
-                <img src="/${pd.img}" alt="Product Image" class="product-img">
+                <img src="../../assets/images/products/${pd.img}" alt="Product Image" class="product-img">
                 <div class="product-details">
                     <h4 class="product-title">${pd.title}</h4>
                     <p class="product-price">Precio: <span>$${pd.price.toFixed(3)}</span> c/u</p>
