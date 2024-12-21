@@ -1,6 +1,7 @@
 
 var products = [];
-const urlDataProduct = '/data/products.json';
+// const urlDataProduct = '/data/products.json';
+const urlDataProduct = './data/products.json';
 
 
 async function getProducts(){
