@@ -159,26 +159,21 @@ function payProducts() {
 }
 
 function checkTotalPayProductCart(products) {
-    const subTotal = document.getElementById("subtotal-cart");
-    const total = document.getElementById("total-cart");
-
-    let sumTotal = 0;
-    let sumSubTotal = 0;
-
-    console.log(sumTotal);
-    console.log(sumSubTotal);
-
-    products.forEach(pd => {
-        sumTotal = sumSubTotal += pd.price;
-    });
-
-    console.log(sumTotal);
-    console.log(sumSubTotal);
-
-
-
-    total.innerHTML = '$' + sumTotal.toFixed(3);
-    subTotal.innerHTML = '$' + sumSubTotal.toFixed(3);
+    if(products){
+        const subTotal = document.getElementById("subtotal-cart");
+        const total = document.getElementById("total-cart");
+    
+        let sumTotal = 0;
+        let sumSubTotal = 0;
+    
+    
+        products.forEach(pd => {
+            sumTotal = sumSubTotal += pd.price;
+        });
+   
+        total.innerHTML = '$' + sumTotal.toFixed(3);
+        subTotal.innerHTML = '$' + sumSubTotal.toFixed(3);
+    }
 }
 
 function main() {
